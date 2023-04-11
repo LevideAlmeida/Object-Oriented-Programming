@@ -1,0 +1,6 @@
+Success: (Galaxy S is on), Smartphone
+Error: (Redmi Note 11 is off) in Smartphone, Smartphone
+Success: (Galaxy S is on), Smartphone
+Error: (Redmi Note 11 is off) in Smartphone, Smartphone
+Error: (LOG) in LogFileMixin, LogFileMixin
+Success: (11/04/2023), LogFileMixin
