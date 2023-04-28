@@ -1,6 +1,6 @@
-"""Este é um módulo de exemplo
-Este módulo contém funções e exemplos de documentação de funções.
-A função soma você já conhece bastante.
+"""this is a exemple module
+this module contains functions and exemples of functions documentation.
+sum function is classic.
 """
 variable_1 = 1
 
