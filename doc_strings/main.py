@@ -1,5 +1,5 @@
 # import one_line
-import many_lines
+# import many_lines
+import doc_funcs
 
-
-help(many_lines)
+help(doc_funcs)
