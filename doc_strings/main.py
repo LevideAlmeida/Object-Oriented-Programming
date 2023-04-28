@@ -1,4 +1,5 @@
-import one_line
+# import one_line
+import many_lines
 
-# print(dir(one_line))
-help(one_line)
+
+help(many_lines)
