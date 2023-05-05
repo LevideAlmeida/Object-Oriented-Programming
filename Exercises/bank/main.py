@@ -1,26 +1,10 @@
-from abc import ABC, abstractmethod
 from accounts import SavingAccount, CheckingAccount, Account
-from person import Person, Client
+from person import Client
+from bank import Bank
 
 
-class Bank:
-    def __init__(self, name):
-        self.name = name
-        self.clients = []
-        self.accounts = []
-        self.agencies = ['1', '2', '3', '4']
-
-    def add_client(self, client: Client):
-        self.clients.append(client)
-
-    def add_account(self, account: Account):
-        self.accounts.append(account)
-
-    def check(self):
-        ...
-
-saving_account = SavingAccount(1, 878, 1000)
-checking_account = CheckingAccount(5, 654, 1000, 1000)
+saving_account = SavingAccount('1', 878, 1000)
+checking_account = CheckingAccount('5', 654, 1000, 1000)
 
 client1 = Client('Levi', '18')
 client1.create_account(saving_account)

@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 class Account(ABC):
-    def __init__(self, agency: int, id: int, balance: float) -> None:
+    def __init__(self, agency: str, id: int, balance: float) -> None:
         super().__init__()
         self.agency = agency
         self._id = id
@@ -20,7 +20,7 @@ class Account(ABC):
 
 
 class SavingAccount(Account):
-    def __init__(self, agency, id, balance):
+    def __init__(self, agency: str, id: int, balance: float):
         super().__init__(agency, id, balance)
 
     def withdraw(self, money):
@@ -39,7 +39,7 @@ class SavingAccount(Account):
         return f'{class_name}{attributes}'
 
 class CheckingAccount(Account):
-    def __init__(self, agency: int, id: int, balance: float, limit: float):
+    def __init__(self, agency: str, id: int, balance: float, limit: float):
         super().__init__(agency, id, balance)
         self.limit = limit
 
@@ -63,7 +63,7 @@ class CheckingAccount(Account):
         return f'{class_name}{attributes}'
 
 if __name__ == '__main__':
-    account1 = SavingAccount(2,544,100)
+    account1 = SavingAccount('2',544,100)
     print(account1)
 
     # account2 = CheckingAccount(4, 122, 0, 100)
